@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript addEventListener() Hands-On</title>
+    <link rel="icon" type="image/x-icon" href="bc.png">
+    <style>
+        body {
+            background: rgb(238,174,202);
+            background: linear-gradient(90deg, rgba(238,174,202,1) 30%, rgba(148,187,233,1) 73%);
+        }
+
+        h1 {
+            text-align: center;
+            font-style: italic;
+            font-family: cursive;
+            color: azure;
+            margin-top: 200px;
+            
+        }
+
+        div {
+            text-align: center;
+            margin: 50px;
+        }
+
+        button {
+            height: 50px;
+            width: 90px;
+            font-family: cursive;
+            background-color: bisque;
+            font-weight: bolder;
+            color: cadetblue;
+            border-radius: 50px 500px 600px;
+        }
+
+        button:hover {
+            background-color: burlywood;
+            color: #fff;
+            border-radius: 15px 50px;
+        }
+
+        .footer{   
+         
+            float: right;
+        }
+
+        .image {
+            width:130px;
+            height:75px;
+            object-fit: contain;
+
+        }
+
+    </style>
+</head>
+<body>
+   
+
+    <h1>JavaScript addEventListener() Hands-On</h1>    
+    <div>
+    <button id="button1">Button 1</button> 
+    <button id="button2">Button 2</button> 
+    <button id="button3">Button 3</button> 
+    </div>
+
+    
+
+    <script>
+
+        function button1Click() {
+            alert("Button 1 was clicked!");
+        }
+
+        function button2Click() {
+            alert("Button 2 was clicked!");
+        }
+
+
+        function button3Click() {
+            alert("Button 3 was clicked!");
+        }
+
+        document.getElementById("button1").addEventListener("click", button1Click);
+        document.getElementById("button2").addEventListener("click", button2Click);
+        document.getElementById("button3").addEventListener("click", button3Click);
+    </script>
+
+<footer class="footer">
+    <img class="image" src="bc.png" alt="">
+
+</footer>
+
+
+</body>
+</html>
